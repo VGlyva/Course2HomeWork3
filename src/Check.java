@@ -1,3 +1,3 @@
 public interface Check {
-    void check(Vehicle vehicle);
+    void check (Vehicle vehicle);
 }

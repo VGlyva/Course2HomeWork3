@@ -7,6 +7,13 @@ public class Vehicle {
         this.wheelsCount = wheelsCount;
     }
 
+    public void service(Vehicle vehicle) {
+        System.out.println("Обслуживаем" + vehicle.getModelName());
+        for (int i = 0; i < vehicle.getWheelsCount(); i++) {
+            vehicle.updateTyre();
+        }
+    }
+
     public String getModelName() {
         return modelName;
     }
